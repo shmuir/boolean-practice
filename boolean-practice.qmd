@@ -4,4 +4,42 @@ format: html
 editor: visual
 ---
 
-## 
+## Logical Operators
+
+-   == : do these values match?
+
+-   != : do these not match
+
+-   =\>, \<=, \<, \>
+
+-   & : and
+
+```{r}
+4 == 4
+
+4 != 5
+
+4 == 4|5
+
+4 == "4"
+
+cat <- 4
+cat < 7
+
+7 > cat | cat > 20
+
+7 > cat & cat == 4
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+ggplot(mtcars, aes(wt, mpg, color = hp, size = qsec)) +
+  geom_point() +
+  labs(x = "Weight (thousands of lbs)", y = "Miles per Gallon", color = "Horsepower", title = "Car Weight Efficiency Relationship") +
+  theme_linedraw()
+```
+
+
